@@ -1,0 +1,187 @@
+/* Добавить черный цвет фона для верхней навигации */
+.topnav {
+    position: relative;
+    background-color: 
+    #898c8d;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+  }
+.decor {
+  display: flex;
+  file-direction:row;
+  flex-wrap: wrap;
+  
+}
+  /* Стиль ссылок внутри панели навигации */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Изменение цвета ссылок при наведении курсора */
+  .topnav .nav:hover {
+    background-color: #ddd;
+    color: #898c8d;
+  }
+  
+  /* Добавление цвета к активной/текущей ссылке */
+  .topnav a.active {
+    
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+  }
+  
+  /* Центрированный раздел внутри верхней навигации */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Выровненный по правому краю раздел внутри верхней навигации */
+  .topnav-right {
+    float: right;
+    font-family: 'Playfair Display', serif;
+  }
+  
+
+  
+
+/* Содержимое страницы */
+.content {
+  padding: 16px;
+}
+
+/* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку панель навигации получает новое положение в верхней части страницы (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.bd:hover{
+
+}
+.plate{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  
+}
+.about {
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  color:#898c8d;
+  flex-wrap:wrap;
+  
+}
+
+
+.payment{
+  display: flex;
+  justify-content: start;
+
+ 
+}
+.h2deliv {
+ font-family:'Playfair Display', serif;
+font-size: 23px;
+color: #0081B4;
+}
+
+
+.varDeliv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery {
+  font-family: 'Playfair Display', serif;
+ }
+
+.first{
+  color:#898c8d;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
+
+
+@media all and (max-width:800px) {
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    
+}
+  .topnav a.active {font-size:19px;}
+  
+  .decor{
+    display: flex;
+  }
+  .leftIm {width:100%;
+  height:100%;}
+  .rightIm{width:100%;
+  height:100%}
+
+.container {
+  display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bodyColor {
+  background-color: #DDF7E3;
+}
+.dL {
+  width: 100%
+}
+}
+
+@media all and (max-width:500px)
+
+{
+  .list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;}
+ 
+   .bodyColor {
+  background-color: #E3DFFD;
+}
+  
+    
+  }
+
+.imgB {
+  width: 300px;
+  height: 400px;
+
+ 
+  
+}
+.dL {
+    width:120px;
+    height:90px;
+  }
+    }
+
+  
+  
